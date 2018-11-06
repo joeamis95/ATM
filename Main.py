@@ -2,6 +2,7 @@ from CheckingAccount import CheckingAccount
 from SavingsAccount import SavingsAccount
 from BusinessAccount import BusinessAccount
 
+
 def userPrompt():
         checking_account = CheckingAccount(200, 500, 1000)
         savings_account = SavingsAccount(10, 400, 200)
@@ -30,7 +31,7 @@ def userPrompt():
         if key.lower() == 'd':
             option = input("Choose an account:\n[C]hecking\n[S]avings\n[B]usiness\n")
             if option.lower() == 'c':
-                return checking_account.userCheckingDeposit
+                return checking_account.userCheckingDeposit()
             elif option.lower() == 's':
                 return savings_account.userSavingsDeposit()
             elif option.lower() == 'b':

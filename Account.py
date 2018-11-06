@@ -8,7 +8,7 @@ class Account:
         self.balance -= amount
         return self.balance
 
-    def deposit(self):
+    def depositing(self):
         amount = int(input("How much do you want to deposit?\n"))
         self.balance += amount
         return self.balance

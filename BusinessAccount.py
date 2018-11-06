@@ -14,10 +14,10 @@ class BusinessAccount(Account):
         return amount_withdraw
 
     def userBusinessDeposit(self):
-        amount_deposit = self.deposit()
+        amount_deposit = self.depositing()
         print(amount_deposit)
         return amount_deposit
 
-    def businessBalance(self, balance):
-        print(balance)
-        return balance
+    def businessBalance(self):
+        print(self.balance)
+        return self.balance

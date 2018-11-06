@@ -14,10 +14,10 @@ class CheckingAccount(Account):
         return amount_withdraw
 
     def userCheckingDeposit(self):
-        amount_deposit = self.deposit()
+        amount_deposit = self.depositing()
         print(amount_deposit)
         return amount_deposit
 
-    def checkingBalance(self, balance):
-        print(balance)
-        return balance
+    def checkingBalance(self):
+        print(self.balance)
+        return self.balance
